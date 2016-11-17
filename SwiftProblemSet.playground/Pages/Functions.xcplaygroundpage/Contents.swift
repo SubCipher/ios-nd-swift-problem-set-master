@@ -50,7 +50,10 @@ func median(num1:Int,num2:Int,num3:Int) ->Int {
  
  **Note**: It is assumed that the input string is given in English.
  */
-
+/*
+ resource notes:
+ https://classroom.udacity.com/nanodegrees/nd003/parts/56b726dc-99a8-45b8-82cc-fdb39a84839b/modules/20c7b805-ac51-4d99-80ad-e13521405f70/lessons/8f6c60e9-98af-49e5-9513-0d99cca99628/concepts/c345aeb5-9e29-45fe-a8db-2f1f4906e505
+ */
 func beginsWithVowel(_ testForVowel:String)->Bool {
     //set benchmark for vowels
     let vowels: String = "aeiou"
