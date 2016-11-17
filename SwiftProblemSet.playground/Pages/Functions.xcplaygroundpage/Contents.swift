@@ -52,42 +52,34 @@ func median(num1:Int,num2:Int,num3:Int) ->Int {
  */
 
 func beginsWithVowel(_ testForVowel:String)->Bool {
-   
-    //tried to practice for loop to iterate and str.lower() to convert --seem not to work in this space
-    if( testForVowel != ""){
+    //set benchmark for vowels
+    let vowels: String = "aeiou"
+    
+    //check for empty string
+    if(testForVowel != ""){
+        //convert all to lowercase
+        var lcTestForVowel = testForVowel.lowercased()
+        //id firstLetter of each word to test
+        let firstLetter = lcTestForVowel.characters[lcTestForVowel.startIndex]
         
-        let firstCharacter = testForVowel.characters[testForVowel.startIndex]
-        
-        if (firstCharacter == "A" || firstCharacter == "a"){
+        //check first letters against benchmark vowels
+        for character in vowels.characters{
+            
+            if(character == firstLetter){
             return true
-        }
-        else if(firstCharacter == "E" || firstCharacter == "e"){
-            return(true)
             }
-        else if(firstCharacter == "I" || firstCharacter == "i"){
-            return(true)
         }
-        else if(firstCharacter == "O" || firstCharacter == "o"){
-            return(true)
-        }
-        else if(firstCharacter == "U" || firstCharacter == "u"){
-            return(true)
-        }else{
-            return false
-        }
-        
     }
-    //if opening if is not true or false
     return false
 
 }
 
  
 //beginsWithVowel("Apples") // true
-// beginsWithVowel("pIG") // false
-// beginsWithVowel("oink") // true
-// beginsWithVowel("udacity") // true
-// beginsWithVowel("") // false
+//beginsWithVowel("pIG") // false
+//beginsWithVowel("oink") // true
+//print(beginsWithVowel("udacity")) // true
+//beginsWithVowel("") // false
 
 
 
@@ -116,7 +108,7 @@ func funWithWords(_ magicString:String) ->String{
 
 // Example Function Call
 
- funWithWords("Apples") // "APPLES"
+ funWithWords("Apples")// "APPLES"
  funWithWords("pIG") // "pig"
  funWithWords("oink") // "OINK"
  funWithWords("udacity") // "UDACITY"
