@@ -9,7 +9,7 @@ import Foundation
 var word = "shampoo"
 
 if(word.contains("ham")){
-print("Yes")
+print("Yes,\(word) contains ham, sam i am")
 }
 
 
@@ -19,17 +19,12 @@ var breakfast:String = "loves green eggs and ham"
 let name:String = "Sam I am"
 
 var kidsRyme:String = name + "," + breakfast
-
 print(kidsRyme)
 
 //: ### Exercise 7
 //: Write code that deletes all occurrences of the word "like" in the following string.
 let lottaLikes = "If like, you wanna learn Swift, like, you should build lots of small apps, cuz it's like, a good way to practice."
-
 print(lottaLikes.replacingOccurrences(of: "like", with: ""))
-
-
-
 
 //: ### Exercise 8
 //: Josie has been saving her pennies and has them all counted up. Using string interpoltaion, write code that, given a number of pennies, prints out how much money Josie has in dollars and cents.

@@ -79,7 +79,6 @@ let baseBugLimit: Int = 10
 let baseMusicRequirement:Bool = true
 let baseGameLevels:Int = 5
 
-
 func checkForRelease(bugs: Int, music: Bool, levels: Int) {
     if(bugs < baseBugLimit && music == baseMusicRequirement && levels > baseGameLevels){
         release()
@@ -151,9 +150,8 @@ func checkTrainingStatus(name: String, bike: Bool, run: Bool) {
     else{
         print("need to get ur weightUP")
         }
-    
-    
-}
+ }
+ 
 checkTrainingStatus(name: name, bike: canFinishBike, run: canFinishRun)
  */
 
