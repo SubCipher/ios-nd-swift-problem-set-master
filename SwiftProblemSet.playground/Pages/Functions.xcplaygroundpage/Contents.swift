@@ -90,7 +90,6 @@ func funWithWords(_ magicString:String) ->String{
         return magicString.lowercased()
     }
 }
-
 // Example Function Call
 
  funWithWords("Apples") // "APPLES"
