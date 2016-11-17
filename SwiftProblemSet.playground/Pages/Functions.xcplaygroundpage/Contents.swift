@@ -53,36 +53,35 @@ func median(num1:Int,num2:Int,num3:Int) ->Int {
 /*
  resource notes:
  https://classroom.udacity.com/nanodegrees/nd003/parts/56b726dc-99a8-45b8-82cc-fdb39a84839b/modules/20c7b805-ac51-4d99-80ad-e13521405f70/lessons/8f6c60e9-98af-49e5-9513-0d99cca99628/concepts/c345aeb5-9e29-45fe-a8db-2f1f4906e505
+ 
+ for loop added soon after submission :( would this == to the suggestion?
+
  */
+
 func beginsWithVowel(_ testForVowel:String)->Bool {
     //set benchmark for vowels
     let vowels: String = "aeiou"
     
-    //check for empty string
     if(testForVowel != ""){
-        //convert all to lowercase
-        var lcTestForVowel = testForVowel.lowercased()
-        //id firstLetter of each word to test
-        let firstLetter = lcTestForVowel.characters[lcTestForVowel.startIndex]
-        
-        //check first letters against benchmark vowels
+        //convert lowercase &id firstLetter of each word to test
+        let firstLetter = testForVowel.lowercased().characters[testForVowel.startIndex]
+
         for character in vowels.characters{
-            
             if(character == firstLetter){
-            return true
+                return true
             }
         }
     }
     return false
-
+    
 }
 
  
 //beginsWithVowel("Apples") // true
-//beginsWithVowel("pIG") // false
-//beginsWithVowel("oink") // true
-//print(beginsWithVowel("udacity")) // true
-//beginsWithVowel("") // false
+// beginsWithVowel("pIG") // false
+// beginsWithVowel("oink") // true
+// beginsWithVowel("udacity") // true
+// beginsWithVowel("") // false
 
 
 
@@ -111,7 +110,7 @@ func funWithWords(_ magicString:String) ->String{
 
 // Example Function Call
 
- funWithWords("Apples")// "APPLES"
+ funWithWords("Apples") // "APPLES"
  funWithWords("pIG") // "pig"
  funWithWords("oink") // "OINK"
  funWithWords("udacity") // "UDACITY"

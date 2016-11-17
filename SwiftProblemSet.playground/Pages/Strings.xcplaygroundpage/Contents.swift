@@ -7,11 +7,10 @@ import Foundation
 //: ### Exercise 5
 //: Write code that tells you whether or not this string contains the substring "ham".
 var word = "shampoo"
+
+if(word.contains("ham")){
 print("Yes")
-
-var vowels = "aeiou"
-print(vowels.contains("a"))
-
+}
 
 
 //: ### Exercise 6
@@ -27,7 +26,7 @@ print(kidsRyme)
 //: Write code that deletes all occurrences of the word "like" in the following string.
 let lottaLikes = "If like, you wanna learn Swift, like, you should build lots of small apps, cuz it's like, a good way to practice."
 
-print(lottaLikes.replacingOccurrences(of: "like ", with: ""))
+print(lottaLikes.replacingOccurrences(of: "like", with: ""))
 
 
 
