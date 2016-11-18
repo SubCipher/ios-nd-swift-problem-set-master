@@ -138,23 +138,23 @@ var canFinishBike: Bool = false
 var canFinishRun: Bool = false
 
 func checkTrainingStatus(name: String, bike: Bool, run: Bool) {
-    if (canFinishRun == true && canFinishBike == true){
+    if (canFinishBike == true && canFinishRun == true){
         print("\(name) is ready to compete in both games")
         }
-        else if (canFinishBike == true){
-        print("\(name) is ready to compete in biking")
+        else if (canFinishBike == true && canFinishRun == false){
+            print("\(name) is ready to compete in biking, but not ready to compete in running")
         }
-        else if(canFinishRun == true){
-        print("\(name) is ready to compete in running")
+        else if (canFinishBike == false && canFinishRun == true){
+            print("\(name) is ready to compete running, but not ready to compete in biking")
         }
     else{
-        print("need to get ur weightUP")
+         print("\(name) is not ready to compete in biking or running.")
         }
- }
- 
-checkTrainingStatus(name: name, bike: canFinishBike, run: canFinishRun)
- */
+}
 
+checkTrainingStatus(name: name, bike: canFinishBike, run: canFinishRun)
+ 
+*/
 /*:
  ****
  [Table of Contents](Table%20of%20Contents) | [Previous](@previous) | [Next](@next)

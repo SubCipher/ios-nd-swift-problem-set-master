@@ -18,16 +18,20 @@ func emojiLove(s1:String,s2:String) {
 //: ### Exercise 15
 //: The function `median` should take three `Int` parameters and return the `Int` value in the middle.
 func median(num1:Int,num2:Int,num3:Int) ->Int {
-    return num2
+    
+    
+    
+    return num1
+
 }
 
-//median(num1: 1, num2: 5, num3: 6) // 5
-// median(num1: 2, num2: 1, num3: 4) // 2
-// median(num1: 3, num2: 6, num3: 6) // 6
-// median(num1: -10, num2: 10, num3: 0) // 0
-// median(num1: 0, num2: 0, num3: 0) // 0
-// median(num1: 2, num2: 3, num3: 1) // 2
-// median(num1: 2, num2: 2, num3: 1) // 2
+median(num1: 1, num2: 5, num3: 6) // 5
+median(num1: 2, num2: 1, num3: 4) // 2
+median(num1: 3, num2: 6, num3: 6) // 6
+median(num1: -10, num2: 10, num3: 0) // 0
+median(num1: 0, num2: 0, num3: 0) // 0
+median(num1: 2, num2: 3, num3: 1) // 2
+median(num1: 2, num2: 2, num3: 1) // 2
 
 /*:
  ### Exercise 16
@@ -43,13 +47,14 @@ func median(num1:Int,num2:Int,num3:Int) ->Int {
  resource notes:
  https://classroom.udacity.com/nanodegrees/nd003/parts/56b726dc-99a8-45b8-82cc-fdb39a84839b/modules/20c7b805-ac51-4d99-80ad-e13521405f70/lessons/8f6c60e9-98af-49e5-9513-0d99cca99628/concepts/c345aeb5-9e29-45fe-a8db-2f1f4906e505
  
+ y as vowel or not? = https://en.oxforddictionaries.com/explore/is-the-letter-y-a-vowel-or-a-consonant
  for loop added soon after submission :( would this == to the suggestion?
 
  */
 
 func beginsWithVowel(_ testForVowel:String)->Bool {
     //set benchmark for vowels
-    let vowels: String = "aeiou"
+    let vowels: String = "aeiouy"
     
     if(testForVowel != ""){
         //convert lowercase &id firstLetter of each word to test
@@ -65,7 +70,7 @@ func beginsWithVowel(_ testForVowel:String)->Bool {
 }
 
 //beginsWithVowel("Apples") // true
-// beginsWithVowel("pIG") // false
+//beginsWithVowel("pIG") // false
 // beginsWithVowel("oink") // true
 // beginsWithVowel("udacity") // true
 // beginsWithVowel("") // false
