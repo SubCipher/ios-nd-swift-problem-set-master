@@ -24,8 +24,6 @@ func median(num1:Int,num2:Int,num3:Int) ->Int {
     let medianIndex = sortedInts.count/2
     let medianNumbers = (sortedInts.sorted()[medianIndex])
     return(medianNumbers)
-    
-    
 }
 
 median(num1: 1, num2: 5, num3: 6) // 5
@@ -71,8 +69,8 @@ func beginsWithVowel(_ testForVowel:String)->Bool {
     return false
 }
 
-//beginsWithVowel("Apples") // true
-//beginsWithVowel("pIG") // false
+// beginsWithVowel("Apples") // true
+// beginsWithVowel("pIG") // false
 // beginsWithVowel("oink") // true
 // beginsWithVowel("udacity") // true
 // beginsWithVowel("") // false
