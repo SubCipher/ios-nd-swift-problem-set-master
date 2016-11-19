@@ -1,33 +1,31 @@
-func median(x:Int, y:Int, z:Int) ->Int{
+
+
+func median(num1:Int, num2:Int, num3:Int){
+
+    let sortedInts: [Int] = [num1,num2,num3]
+    let medianIndex = sortedInts.count/2
+    let medianNumbers = (sortedInts.sorted()[medianIndex])
+    print(medianNumbers)
     
-    if(x >= y && y >= z){
-        print(y)
-    }else if(y >= x && x <= z ){
-        print(z)
-        
-    }else{
-        print(x)
-    }
-            return z
 }
 
-median(x: 22, y: 22, z: 1) //22
-median(x: 8, y: 4, z: 19) //8
-median(x: 2, y: 1, z: 0)    //1
-median(x: 43, y: 33, z: 99) //43
-median(x: 21, y: 23, z: 44)  //23
-median(x: 0, y: 0, z: 0) //0
-median(x: -10, y: 10, z: 0)//0
-median(x: 12, y: 13, z: 3)//12
+median(num1: 1, num2: 22, num3: 14) //14
+median(num1: 4, num2: 8, num3: 19) //8
+median(num1: 2, num2: 1, num3: 0)    //1
+median(num1: 99, num2: 33, num3: 43) //43
+median(num1: 21, num2: 23, num3: 44)  //23
+median(num1: 0, num2: 0, num3: 0) //0
+median(num1: -10, num2: 10, num3: 0)//0
+median(num1: 3, num2: 11, num3: 12)//11
 
 print("----------------------------")
 
-median(x: 1, y: 5, z: 6) // 5
-median(x: 2, y: 1, z: 4) // 2
-median(x: 3, y: 6, z: 6) // 6
-median(x: -10,y: 10, z: 0) // 0
-median(x: 0, y: 0, z: 0) // 0
-median(x: 2, y: 3, z: 1) // 2
-median(x: 2, y: 2, z: 1) // 2
+median(num1: 1, num2: 5, num3: 6) // 5
+median(num1: 2, num2: 1, num3: 4) // 2
+median(num1: 3, num2: 6, num3: 6) // 6
+median(num1: -10,num2: 10, num3: 0) // 0
+median(num1: 0, num2: 0, num3: 0) // 0
+median(num1: 3, num2: 2, num3: 1) // 2
+median(num1: 2, num2: 2, num3: 1) // 2
 
 

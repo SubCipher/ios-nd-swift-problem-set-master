@@ -6,6 +6,7 @@
 //: ### Exercise 14
 //: The function `emojiLove` should take two `String` parameters and use them to print a `String` with  the format "stringParameterOne ❤️ stringParameterTwo".
 /*
+ 
 func emojiLove(s1:String,s2:String) {
     print(s1 + " ❤️ " + s2)
 }
@@ -18,21 +19,22 @@ func emojiLove(s1:String,s2:String) {
 //: ### Exercise 15
 //: The function `median` should take three `Int` parameters and return the `Int` value in the middle.
 func median(num1:Int,num2:Int,num3:Int) ->Int {
-    
-    
-    
-    return num1
 
+    let sortedInts: [Int] = [num1,num2,num3]
+    let medianIndex = sortedInts.count/2
+    let medianNumbers = (sortedInts.sorted()[medianIndex])
+    return(medianNumbers)
+    
+    
 }
 
-median(num1: 1, num2: 5, num3: 6) // 5
-median(num1: 2, num2: 1, num3: 4) // 2
-median(num1: 3, num2: 6, num3: 6) // 6
-median(num1: -10, num2: 10, num3: 0) // 0
-median(num1: 0, num2: 0, num3: 0) // 0
-median(num1: 2, num2: 3, num3: 1) // 2
-median(num1: 2, num2: 2, num3: 1) // 2
-
+print(median(num1: 1, num2: 5, num3: 6)) // 5
+print(median(num1: 2, num2: 1, num3: 4)) // 2
+print(median(num1: 3, num2: 6, num3: 6)) // 6
+print(median(num1: -10, num2: 10, num3: 0)) // 0
+print(median(num1: 0, num2: 0, num3: 0)) // 0
+print(median(num1: 2, num2: 3, num3: 1)) // 2
+print(median(num1: 2, num2: 2, num3: 1)) // 2
 /*:
  ### Exercise 16
  
